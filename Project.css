@@ -1,0 +1,441 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Top Bar */
+.top-bar {
+    background: #164c3b;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Header */
+.main-header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #164c3b;
+    outline: none;
+}
+
+.user-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.user-actions a {
+    text-decoration: none;
+    color: #333
+}
+
+/* Hero Section */
+.hero-section {
+    background: url("./images/organic.webp") center/cover no-repeat;
+    padding: 200px 0;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.hero-text {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.hero-text .btn {
+    display: inline-block;
+    background: #164c3b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+    margin-top: 10px;
+    position: relative;
+    top: 180px;
+}
+
+.hero-text .btn:hover,
+.hero-text .btn:focus {
+    background: #0e3a2c;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-text .btn {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+.product-categories {
+  padding: 3rem 1rem;
+  background: #ffffff;
+  margin-top: 3rem; /* Space between the first and second sections */
+}
+
+.product-categories .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5rem;
+  justify-items: center;
+}
+
+.product-categories .category img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-categories .category img:hover {
+  transform: scale(1.1);
+}
+
+.product-categories .category h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.trending-now {
+  padding: 3rem 1rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.trending-now h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.trending-now .divider {
+  width: 100px;
+  height: 4px;
+  background: #4CAF50;
+  margin: 0.5rem auto 2rem;
+  border-radius: 2px;
+}
+
+.trending-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 220px;
+  flex: 1 1 calc(25% - 1.5rem); /* Responsive sizing */
+  box-sizing: border-box;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.product-card .price {
+  font-size: 1rem;
+  color: #555;
+}
+
+.product-card .price .original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 0.5rem;
+}
+
+.add-to-cart {
+  margin-top: 1rem;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+  background: #45a049;
+}
+
+/* General Section Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.trending-now {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.trending-now h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  width: 100px;
+  height: 4px;
+  background-color: #4caf50;
+  margin: 0.5rem auto 2rem;
+  border-radius: 2px;
+}
+
+/* Product Container */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  max-width: 300px;
+  flex: 1 1 calc(25% - 2rem); /* Makes it responsive */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .price {
+  font-size: 1rem;
+  color: #4caf50;
+  margin-bottom: 1rem;
+}
+
+.product-card .original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 0.5rem;
+}
+
+.add-to-cart {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-card {
+    flex: 1 1 calc(50% - 2rem); /* 2 items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    flex: 1 1 100%; /* 1 item per row */
+  }
+}
+
+
+/* Best Selling Organic Products Section */
+.best-selling {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.best-selling h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.best-selling .divider {
+  width: 100px;
+  height: 4px;
+  background-color: #4caf50;
+  margin: 0.5rem auto 2rem;
+  border-radius: 2px;
+}
+
+
+/* Tulsi Wellness Section */
+.tulsi-wellness {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #fef9f3;
+}
+
+.tulsi-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.tulsi-image img {
+  width: 90%;
+  border-radius: 50%;
+}
+
+.tulsi-content {
+  text-align: left;
+}
+
+.tulsi-content h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.tulsi-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tulsi-content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.tulsi-content .icon img {
+  width: 70px;
+  margin-right: 1rem;
+}
+
+.tulsi-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.tulsi-content p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.shop-now {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 1rem;
+
+}
+
+.shop-now .btn:hover
+{
+    background: #333;
+}
+
+
+
+
+
